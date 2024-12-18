@@ -19,7 +19,7 @@ struct FittingStack<Content: View>: View {
     }
 
     var body: some View {
-        ViewThatFits {
+        ViewThatFits(in: .horizontal) {
             HStack(alignment: alignment.vertical, spacing: spacing) {
                 content(.horizontal)
             }
